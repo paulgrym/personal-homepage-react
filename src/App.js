@@ -1,11 +1,5 @@
+import HomePage from "./features/homePage/HomePage";
 
-
-function App() {
-  return (
-    <div>
-      test
-    </div>
-  );
-}
+const App = () => <HomePage />;
 
 export default App;
