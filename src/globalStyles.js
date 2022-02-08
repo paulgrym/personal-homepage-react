@@ -11,9 +11,10 @@ export const GlobalStyle = createGlobalStyle`
 
   body {
     margin: 16px;
-    word-break: break-all;
     overflow-y:scroll;
     background: ${({ theme }) => theme.colors.site.background};
     font-family: 'Inter', sans-serif;
+    letter-spacing: 0.05em;
+
   }
 `;
