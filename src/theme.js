@@ -5,6 +5,8 @@ const colorNames = {
   mercury: "#E5E5E5",
   mineShaft: "#252525",
   mineShaftLight: "rgba(54,54,54,0.72)",
+  anakiwa: "#8CC2FF",
+  shipCove: "#6D93BE",
   dodgerBlue: "#2188FF",
   scienceBlue: "#0366D6",
   slateGrey: "#6E7E91",
@@ -12,9 +14,11 @@ const colorNames = {
 };
 
 const common = {
-  small: 767,
-  medium: 991,
-  large: 1199,
+  breakpoints: {
+    small: 767,
+    medium: 991,
+    large: 1199,
+  },
 }
 
 export const themeLight = {
@@ -28,6 +32,11 @@ export const themeLight = {
     },
     boxBackground: colorNames.white,
     titleUnderline: colorNames.ironLight,
+    buttonLink: {
+      hoverShadow: colorNames.anakiwa,
+      text: colorNames.white
+    },
+
 
   }
 };
@@ -43,6 +52,10 @@ export const themeDark = {
     },
     boxBackground: colorNames.mineShaftLight,
     titleUnderline: colorNames.ironLight,
+    buttonLink: {
+      hoverShadow: colorNames.shipCove,
+      text: colorNames.white
+    },
 
   }
 
