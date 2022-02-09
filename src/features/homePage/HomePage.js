@@ -1,9 +1,9 @@
 import { Container } from "../../common/Container";
-import PersonInfo from "./PersonInfo";
 import ThemeSwitcher from "../../common/ThemeSwitcher";
+import PersonInfo from "./PersonInfo";
 import Skills from "./Skills";
 import WantToLearn from "./WantToLearn";
-
+import Footer from "./Footer";
 
 const HomePage = ({ toggleTheme, darkModeOn }) => {
 
@@ -13,6 +13,8 @@ const HomePage = ({ toggleTheme, darkModeOn }) => {
       <PersonInfo />
       <Skills />
       <WantToLearn />
+
+      <Footer />
     </Container>
   )
 };
