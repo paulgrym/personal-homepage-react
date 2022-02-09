@@ -17,7 +17,7 @@ export const GlobalStyle = createGlobalStyle`
     letter-spacing: 0.05em;
     transition: 0.5s ease;
 
-    @media (max-width:${({ theme }) => theme.breakpoints.small}){
+    @media (max-width:${({ theme }) => theme.breakpoints.small}px){
       margin: 21px 16px 31px;
     }
   }
