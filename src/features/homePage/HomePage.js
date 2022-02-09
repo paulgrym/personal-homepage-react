@@ -1,34 +1,18 @@
-import Section from "../../common/Section";
 import { Container } from "../../common/Container";
-import rocket from "../../images/rocket.png"
-import tools from "../../images/tools.png"
-import { Image } from "./Image";
 import PersonInfo from "./PersonInfo";
 import ThemeSwitcher from "../../common/ThemeSwitcher";
+import Skills from "./Skills";
+import WantToLearn from "./WantToLearn";
+
 
 const HomePage = ({ toggleTheme, darkModeOn }) => {
+
   return (
     <Container>
       <ThemeSwitcher toggleTheme={toggleTheme} darkModeOn={darkModeOn} />
       <PersonInfo />
-      <Section
-        title={
-          <>
-            My skills<Image src={tools} alt=" " />
-          </>
-        }
-        body={""}
-      />
-
-      <Section
-        title={
-          <>
-            What i want to learn next<Image src={rocket} alt=" " />
-          </>
-        }
-        body={""}
-      />
-
+      <Skills />
+      <WantToLearn />
     </Container>
   )
 };
