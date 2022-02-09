@@ -4,12 +4,13 @@ const colorNames = {
   ironLight: "rgba(209, 213, 218, 0.3)",
   mercury: "#E5E5E5",
   mineShaft: "#252525",
+  slateGrey: "#6E7E91",
+  scorpion: "#5f5f5f",
   mineShaftLight: "rgba(54,54,54,0.72)",
   anakiwa: "#8CC2FF",
   shipCove: "#6D93BE",
   dodgerBlue: "#2188FF",
   scienceBlue: "#0366D6",
-  slateGrey: "#6E7E91",
 
 };
 
@@ -36,6 +37,12 @@ export const themeLight = {
       hoverShadow: colorNames.anakiwa,
       text: colorNames.white
     },
+    themeSwitcher: {
+      text: colorNames.slateGrey,
+      background: colorNames.mercury,
+      border: colorNames.slateGrey,
+      icon: colorNames.white,
+    }
 
 
   }
@@ -56,7 +63,12 @@ export const themeDark = {
       hoverShadow: colorNames.shipCove,
       text: colorNames.white
     },
-
+    themeSwitcher: {
+      text: colorNames.white,
+      background: colorNames.scorpion,
+      border: colorNames.white,
+      icon: colorNames.mineShaft,
+    }
   }
 
 };

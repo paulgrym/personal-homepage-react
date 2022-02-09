@@ -11,7 +11,7 @@ const App = () => {
     <>
       <ThemeProvider theme={darkModeOn ? themeDark : themeLight}>
         <GlobalStyle />
-        <HomePage toggleTheme={toggleTheme} />
+        <HomePage toggleTheme={toggleTheme} darkModeOn={darkModeOn} />
       </ThemeProvider>
     </>
 
