@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { ReactComponent as EnvelopeIcon } from "../../../images/envelope.svg";
 
 export const AboutSection = styled.section`
-  margin-bottom:72px;
+  margin: -28px 0 72px;
   max-width:1089px;
   display: grid;
   grid-template-columns: auto 1fr;
@@ -10,7 +10,7 @@ export const AboutSection = styled.section`
 
   @media (max-width: ${({ theme }) => theme.breakpoints.small}px){
     display:block;
-    margin-bottom:48px;
+    margin: -15px 0 48px;
   }
 `;
 
