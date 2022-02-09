@@ -10,7 +10,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    margin: 119px 16px 109px;
+    margin: 24px 16px 48px;
     overflow-y:scroll;
     background: ${({ theme }) => theme.colors.site.background};
     font-family: 'Inter', sans-serif;
@@ -18,7 +18,7 @@ export const GlobalStyle = createGlobalStyle`
     transition: 0.5s ease;
 
     @media (max-width:${({ theme }) => theme.breakpoints.small}px){
-      margin: 21px 16px 31px;
+      margin: 20px 16px 28px;
     }
   }
 `;
