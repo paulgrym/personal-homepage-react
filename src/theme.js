@@ -2,6 +2,7 @@ const colorNames = {
   white: "#FFFFFF",
   whiteLilac: "#FBFBFE",
   ironLight: "rgba(209, 213, 218, 0.3)",
+  ironLightDarkMode: "rgba(209, 213, 218, 0.1)",
   mercury: "#E5E5E5",
   mineShaft: "#252525",
   slateGrey: "#6E7E91",
@@ -10,8 +11,9 @@ const colorNames = {
   anakiwa: "#8CC2FF",
   shipCove: "#6D93BE",
   dodgerBlue: "#2188FF",
+  scienceBlueLight: "rgba(3, 102, 214, 0.2)",
+  scienceBlueLightDarkMode: "rgba(3, 102, 214, 0.5)",
   scienceBlue: "#0366D6",
-
 };
 
 const common = {
@@ -42,9 +44,15 @@ export const themeLight = {
       background: colorNames.mercury,
       border: colorNames.slateGrey,
       icon: colorNames.white,
+    },
+    tile: {
+      header: colorNames.scienceBlue,
+      background: colorNames.white,
+      text: colorNames.slateGrey,
+      link: colorNames.scienceBlue,
+      border: colorNames.ironLight,
+      borderHover: colorNames.scienceBlueLight,
     }
-
-
   }
 };
 
@@ -68,6 +76,14 @@ export const themeDark = {
       background: colorNames.scorpion,
       border: colorNames.white,
       icon: colorNames.mineShaft,
+    },
+    tile: {
+      header: colorNames.white,
+      background: colorNames.mineShaftLight,
+      text: colorNames.white,
+      link: colorNames.dodgerBlue,
+      border: colorNames.ironLightDarkMode,
+      borderHover: colorNames.scienceBlueLightDarkMode,
     }
   }
 

@@ -4,6 +4,7 @@ import PersonInfo from "./PersonInfo";
 import Skills from "./Skills";
 import WantToLearn from "./WantToLearn";
 import Footer from "./Footer";
+import Portfolio from "./Portfolio";
 
 const HomePage = ({ toggleTheme, darkModeOn }) => {
 
@@ -13,7 +14,7 @@ const HomePage = ({ toggleTheme, darkModeOn }) => {
       <PersonInfo />
       <Skills />
       <WantToLearn />
-
+      <Portfolio />
       <Footer />
     </Container>
   )
