@@ -10,7 +10,7 @@ export const CallToAction = styled.h2`
   line-height: 1,3;
   text-transform: uppercase;
   color:${({ theme }) => theme.colors.site.text};
-  margin: 120px 0 24px;
+  margin: 24px 0 24px;
   letter-spacing: initial;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.small}px){
@@ -87,6 +87,7 @@ export const Link = styled.a`
 `
 
 export const StyledIcon = Icon => styled(Icon)`
+  height:auto;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.small}px){
       width:32px;

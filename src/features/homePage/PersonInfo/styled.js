@@ -67,6 +67,7 @@ export const Content = styled.p`
 export const ButtonIcon = styled(EnvelopeIcon)`
   color:${({ theme }) => theme.colors.buttonLink.text};
   margin-right:18px;
+  width:auto;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.small}px){
     margin-right:14px;
