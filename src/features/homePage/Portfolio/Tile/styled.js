@@ -67,5 +67,12 @@ export const LinkItem = styled.dd`
 `
 
 export const Link = styled.a`
-  color: ${({ theme }) => theme.colors.tile.link};  
+  cursor: pointer;
+  color: ${({ theme }) => theme.colors.tile.link}; 
+  text-decoration: none;
+  border-bottom: 1px solid ${({ theme }) => theme.colors.tile.linkUnderline};
+
+  &:hover{
+    border-bottom-color:${({ theme }) => theme.colors.tile.linkUnderlineHover};
+  }
 `
