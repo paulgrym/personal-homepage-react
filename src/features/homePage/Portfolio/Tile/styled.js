@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledTile = styled.div`
-  padding:56px;
+  padding: 56px;
   background: ${({ theme }) => theme.colors.tile.background};
   border: 6px solid ${({ theme }) => theme.colors.tile.border};
   box-sizing: border-box;
@@ -18,7 +18,7 @@ export const StyledTile = styled.div`
   @media (max-width: ${({ theme }) => theme.breakpoints.small}px){
     font-size: 14px;
     line-height: 17px;
-    padding:24px;
+    padding: 24px;
   }
   
 `
@@ -27,42 +27,42 @@ export const Header = styled.h2`
   font-weight: 700;
   font-size: 24px;
   line-height: 29px;
-  margin:0 0 24px;
+  margin: 0 0 24px;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.small}px){
     font-size: 16px;
     line-height: 19px;
-    margin:0 0 16px;
+    margin: 0 0 16px;
   }
 `
 
 export const Description = styled.p`
   color: ${({ theme }) => theme.colors.tile.text};
-  margin:0 0 24px;
+  margin: 0 0 24px;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.small}px){
-    margin:0 0 16px;
+    margin: 0 0 16px;
   }
 `
 export const Container = styled.dl`
-  display:flex;
-  grid-template-columns:auto 1fr;
-  margin:0 0 8px;
+  display: flex;
+  grid-template-columns: auto 1fr;
+  margin: 0 0 8px;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.small}px){
-    margin:0 0 10px;
+    margin: 0 0 10px;
   }
 `
 
 export const Term = styled.dt`
   color: ${({ theme }) => theme.colors.tile.text};
-  margin-right:8px;
-  max-width:60px;
-  width:100%;
+  margin-right: 8px;
+  max-width: 60px;
+  width: 100%;
   
 `
 export const LinkItem = styled.dd`
-  margin:0;
+  margin: 0;
 
 `
 

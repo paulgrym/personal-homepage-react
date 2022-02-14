@@ -52,7 +52,12 @@ export const themeLight = {
       link: colorNames.scienceBlue,
       border: colorNames.ironLight,
       borderHover: colorNames.scienceBlueLight,
-    }
+    },
+    portfolio: {
+      text: colorNames.mineShaft,
+      spinner: colorNames.ironLight,
+      spinnerColor: colorNames.scienceBlue,
+    },
   }
 };
 
@@ -84,7 +89,12 @@ export const themeDark = {
       link: colorNames.dodgerBlue,
       border: colorNames.ironLightDarkMode,
       borderHover: colorNames.scienceBlueLightDarkMode,
-    }
+    },
+    portfolio: {
+      text: colorNames.white,
+      spinner: colorNames.mineShaftLight,
+      spinnerColor: colorNames.dodgerBlue,
+    },
   }
 
 };
