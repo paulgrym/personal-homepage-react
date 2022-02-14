@@ -1,5 +1,5 @@
 import { AboutSection, Photo, Introduction, Header, Content, ButtonIcon, ButtonText } from "./styled";
-import photo from "../../../images/photo.png"
+import photo from "../../../images/photo.jpg"
 import { ButtonLink } from "../../../common/ButtonLink";
 import { email } from "../email";
 
