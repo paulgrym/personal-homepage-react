@@ -14,12 +14,12 @@ export const StyledList = styled.ul`
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoints.small}px){
-    grid-template-columns:repeat(1, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     font-size: 14px;
   }
 `
 export const ListItem = styled.li`
-  font-weight:400;
+  font-weight: 400;
   color:${({ theme }) => theme.colors.site.text};
   display: block;
   line-height: 1.4;
@@ -36,6 +36,6 @@ export const ListItem = styled.li`
     border-radius: 50%;
     display: inline-block;
     vertical-align: middle;
-    margin-right:16px;
+    margin-right: 16px;
   }
 `

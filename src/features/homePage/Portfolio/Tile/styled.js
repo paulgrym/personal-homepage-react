@@ -9,7 +9,7 @@ export const StyledTile = styled.div`
   border-radius: 4px;
   font-weight: 400;
   font-size: 18px;
-  line-height: 1,4;
+  line-height: 1.4;
 
   &:hover{
     border: 6px solid ${({ theme }) => theme.colors.tile.borderHover};
@@ -73,6 +73,6 @@ export const Link = styled.a`
   border-bottom: 1px solid ${({ theme }) => theme.colors.tile.linkUnderline};
 
   &:hover{
-    border-bottom-color:${({ theme }) => theme.colors.tile.linkUnderlineHover};
+    border-bottom-color: ${({ theme }) => theme.colors.tile.linkUnderlineHover};
   }
 `

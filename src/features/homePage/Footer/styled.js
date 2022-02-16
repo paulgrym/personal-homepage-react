@@ -7,9 +7,9 @@ export const StyledFooter = styled.footer`
 export const CallToAction = styled.h2`
   font-weight: 700;
   font-size: 12px;
-  line-height: 1,3;
+  line-height: 1.3;
   text-transform: uppercase;
-  color:${({ theme }) => theme.colors.site.text};
+  color: ${({ theme }) => theme.colors.site.text};
   margin: 24px 0 24px;
   letter-spacing: initial;
 
@@ -19,7 +19,7 @@ export const CallToAction = styled.h2`
 `;
 
 export const Contact = styled.address`
-  font-style:unset;
+  font-style: unset;
 `
 
 export const ContactLink = styled.a`
@@ -27,13 +27,13 @@ export const ContactLink = styled.a`
   font-size: 32px;
   line-height: 39px;
   color:${({ theme }) => theme.colors.textPrimary};
-  margin:0 0 24px;
-  display:inline-block;
-  text-decoration:none;
+  margin: 0 0 24px;
+  display: inline-block;
+  text-decoration: none;
   transition: color 0.3s;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.small}px){
-    margin:0 0 12px;
+    margin: 0 0 12px;
     font-size: 18px;
     line-height: 22px;
   }
@@ -50,22 +50,22 @@ export const ContactLink = styled.a`
 
 export const Content = styled.p`
   font-size: 18px;
-  line-height: 1,4;
-  color:${({ theme }) => theme.colors.textPrimary};
+  line-height: 1.4;
+  color: ${({ theme }) => theme.colors.textPrimary};
   margin: 0 0 56px;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.small}px){
-    margin:0 0 24px;
+    margin: 0 0 24px;
     font-size: 14px;
     line-height: 17px;
   }
 `;
 
 export const Socials = styled.ul`
-  display:flex;
-  padding:0;
-  list-style:none;
-  margin:0;
+  display: flex;
+  padding: 0;
+  list-style: none;
+  margin: 0;
 `
 
 export const Item = styled.li`
@@ -73,23 +73,23 @@ export const Item = styled.li`
 `
 
 export const Link = styled.a`
-  text-decoration:none; 
-  color:${({ theme }) => theme.colors.textPrimary};
+  text-decoration: none; 
+  color: ${({ theme }) => theme.colors.textPrimary};
 
   &:hover{
-    color:${({ theme }) => theme.colors.primary};
+    color: ${({ theme }) => theme.colors.primary};
   }
 
   &:active{
-    color:${({ theme }) => theme.colors.primary};
+    color: ${({ theme }) => theme.colors.primary};
     filter: brightness(115%);
   }
 `
 
 export const StyledIcon = Icon => styled(Icon)`
-  height:auto;
+  height: auto;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.small}px){
-      width:32px;
+      width: 32px;
     }
 `

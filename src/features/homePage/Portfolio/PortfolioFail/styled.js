@@ -26,7 +26,7 @@ export const Error = styled.p`
   color: ${({ theme }) => theme.colors.portfolio.text};
   font-weight: 700;
   font-size: 24px;
-  line-height: 1,2 px;
+  line-height: 1.2;
   margin: 0 0 32px;
   
   @media (max-width: ${({ theme }) => theme.breakpoints.small}px){
@@ -39,7 +39,7 @@ export const Paragrah = styled.p`
   color: ${({ theme }) => theme.colors.portfolio.text};
   font-weight: 400;
   font-size: 20px;
-  line-height: 1,4;
+  line-height: 1.4;
   margin: 0 0 32px;
   
   @media (max-width: ${({ theme }) => theme.breakpoints.small}px){

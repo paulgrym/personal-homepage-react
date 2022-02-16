@@ -1,18 +1,19 @@
 import styled from "styled-components";
 
 export const ButtonLink = styled.a`
-  color:${({ theme }) => theme.colors.buttonLink.text};
+  color: ${({ theme }) => theme.colors.buttonLink.text};
   font-weight: 600;
   font-size: 20px;
   line-height: 24px;
-  text-decoration:none;
+  text-decoration: none;
   padding: 12px 16px;
   border: 1px solid rgba(209, 213, 218, 0.3);
   border-radius: 4px;
   background:${({ theme }) => theme.colors.primary};
-  display:inline-flex;
-  align-items:center;
+  display: inline-flex;
+  align-items: center;
   transition: box-shadow 0.5s;
+  cursor: pointer;
 
   &:hover{
     box-shadow: 

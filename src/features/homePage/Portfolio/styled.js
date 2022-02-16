@@ -17,7 +17,7 @@ export const Header = styled.header`
 export const Icon = styled(PortfolioIcon)`
   height: auto;
   margin: 0 0 13px;
-  color:${({ theme }) => theme.colors.primary};
+  color: ${({ theme }) => theme.colors.primary};
 
   @media (max-width: ${({ theme }) => theme.breakpoints.small}px){
     width: 32px;
@@ -42,7 +42,7 @@ export const Title = styled.h4`
   margin: 0;
   font-weight: 400;
   font-size: 20px;
-  line-height: 1,4;
+  line-height: 1.4;
   color: ${({ theme }) => theme.colors.textPrimary};
 
   @media (max-width: ${({ theme }) => theme.breakpoints.small}px){

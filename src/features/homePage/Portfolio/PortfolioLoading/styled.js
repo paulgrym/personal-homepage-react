@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   margin: 88px auto 0;
-  text-align :center;
+  text-align: center;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.small}px){
     margin: 44px 0 0;
@@ -13,7 +13,7 @@ export const Paragrah = styled.p`
   color: ${({ theme }) => theme.colors.portfolio.text};
   font-weight: 400;
   font-size: 20px;
-  line-height: 1,4;
+  line-height: 1.4;
   margin: 0 0 48px;
   
   @media (max-width: ${({ theme }) => theme.breakpoints.small}px){
