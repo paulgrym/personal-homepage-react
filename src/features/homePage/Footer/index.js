@@ -8,12 +8,11 @@ import {
   Socials,
   StyledFooter
 } from "./styled";
-
 import { email } from "../email";
 import { socials } from "./socials";
 
 const Footer = () => (
-  <StyledFooter>
+  <StyledFooter id="footer">
     <CallToAction>Let's talk!</CallToAction>
     <Contact>
       <ContactLink href={`mailto:${email}`} title={email}>
@@ -21,7 +20,7 @@ const Footer = () => (
       </ContactLink>
     </Contact>
     <Content>
-      I’m always open to new projects whenever I have the time. If you have a website in mind and need some help to make your ideas come to life, feel free to contact me 😃.
+      I'm always open to new projects whenever I have the time. If you have a website in mind and need some help to make your ideas come to life, feel free to contact me 😃.
     </Content>
     <Socials>
       {socials.map(({ name, address, Icon }) => (
@@ -33,6 +32,6 @@ const Footer = () => (
       ))}
     </Socials>
   </StyledFooter>
-)
+);
 
 export default Footer;
