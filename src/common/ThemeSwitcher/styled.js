@@ -4,6 +4,7 @@ import { ReactComponent as Sun } from "../../images/sun.svg"
 export const Wrapper = styled.div`
   display: flex;
   justify-content: flex-end;
+  position:relative;
 `
 
 export const StyledThemeSwitcher = styled.button`
