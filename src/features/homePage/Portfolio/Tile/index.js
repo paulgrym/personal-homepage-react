@@ -1,6 +1,6 @@
 import { Description, Header, Container, Term, Link, StyledTile, LinkItem } from "./styled";
 
-const Tile = ({ title, description, demoUrl, repoUrl }) => {
+const Tile = ({ title, description, demoUrl, repoUrl, update }) => {
 
   return (
     <StyledTile>
@@ -9,14 +9,15 @@ const Tile = ({ title, description, demoUrl, repoUrl }) => {
       <Container>
         <Term>Demo:</Term>
         <LinkItem>
-          <Link>{demoUrl}</Link>
+          <Link href={demoUrl} target="_blank" rel="noreferrer noopener">{demoUrl}</Link>
         </LinkItem>
       </Container>
       <Container>
         <Term>Code:</Term>
         <LinkItem>
-          <Link>{repoUrl}</Link>
+          <Link href={repoUrl} target="_blank" rel="noreferrer noopener">{repoUrl}</Link>
         </LinkItem>
+        {update}
       </Container>
     </StyledTile>
   );
