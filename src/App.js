@@ -14,7 +14,6 @@ const App = () => {
         <HomePage toggleTheme={toggleTheme} darkModeOn={darkModeOn} />
       </ThemeProvider>
     </>
-
   );
 };
 
