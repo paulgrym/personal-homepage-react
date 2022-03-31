@@ -1,16 +1,9 @@
 # Virtual CV
 
-Single page application made in React. It includes lists of my projects, skills and things I would like to learn next. 
-
-The repositories are fetched from the GitHub API. The website has a theme switcher which changes site's color theme from light to dark. 
-
-At the top of the page there is a "Hire me" button, pressing which will scroll to the bottom of the page, where I have listed all the communication channels through which you can contact me.
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 ## Table od content
 
 * [Demo](#demo)
-<!-- * [Preview](#preview) -->
+* [Description](#description)
 * [Technologies](#technologies)
 * [Available scripts](#available-scripts)
 
@@ -18,9 +11,15 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 You can find a demo [here](https://paulgrym.github.io/personal-homepage-react/).
 
-<!-- ## Preview -->
-<!-- ![How to use gif ](./animation.gif) -->
+## Description
 
+Single page application made in React. It includes lists of my projects, skills and things I would like to learn next. 
+
+The repositories are fetched from the GitHub API. The website has a theme switcher which changes site's color theme from light to dark. 
+
+At the top of the page there is a "Hire me" button, pressing which will scroll to the bottom of the page, where I have listed all the communication channels through which you can contact me.
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Technologies
 
