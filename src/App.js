@@ -1,17 +1,18 @@
-import { useState } from "react";
 import { ThemeProvider } from "styled-components";
 import HomePage from "./features/homePage/HomePage";
 import { themeDark, themeLight } from "./theme";
 import { GlobalStyle } from './globalStyles';
+import { selectIsDarkTheme } from "./common/ThemeSwitcher/themeSlice";
+import { useSelector } from "react-redux";
 
 const App = () => {
-  const [darkModeOn, setDarkModeOn] = useState(false);
-  const toggleTheme = () => setDarkModeOn(darkModeOn => !darkModeOn)
+  const isDarkTheme = useSelector(selectIsDarkTheme);
+
   return (
     <>
-      <ThemeProvider theme={darkModeOn ? themeDark : themeLight}>
+      <ThemeProvider theme={isDarkTheme ? themeDark : themeLight}>
         <GlobalStyle />
-        <HomePage toggleTheme={toggleTheme} darkModeOn={darkModeOn} />
+        <HomePage />
       </ThemeProvider>
     </>
   );

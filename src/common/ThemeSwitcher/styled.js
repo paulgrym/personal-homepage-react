@@ -48,7 +48,7 @@ export const SunBackground = styled.span`
   display: flex;
   transition: transform 0.3s ease-in;
 
-  ${({ darkModeOn }) => darkModeOn && css`
+  ${({ isDarkTheme }) => isDarkTheme && css`
     transform: translateX(20px);
   `}
 `
