@@ -9,7 +9,7 @@ const PersonInfo = () => (
     <div>
       <Introduction>This is</Introduction>
       <Header>Paulina Grymulska</Header>
-      <Content>I'm an aspiring Frontend Developer, who is dedicated to learning React.
+      <Content>I'm an aspiring Frontend Developer and a feedback lover, who is dedicated to learning React.
         Currently, I'm  looking for a new job opportunities, so if you like my projects please don't hesitate to contact me 😃💻.</Content>
       <Link
         to="footer"

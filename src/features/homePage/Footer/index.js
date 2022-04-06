@@ -20,7 +20,7 @@ const Footer = () => (
       </ContactLink>
     </Contact>
     <Content>
-      I'm always open to new projects whenever I have the time. If you have a website in mind and need some help to make your ideas come to life, feel free to contact me 😃.
+      If you are looking for a committed team member with outstanding analytical skills and a passion for teamwork, feel free to contact me 😃.
     </Content>
     <Socials>
       {socials.map(({ name, address, Icon }) => (
