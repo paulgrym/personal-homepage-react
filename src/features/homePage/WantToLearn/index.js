@@ -1,9 +1,7 @@
 import { nanoid } from "@reduxjs/toolkit";
 import List from "../../../common/List";
 import Section from "../../../common/Section";
-import { Image } from "../Image";
 import { wantToLearn } from "./wantToLearn";
-import rocket from "../../../images/rocket.png";
 
 const WantToLearn = () => {
   const wantToLearnWithIndex = wantToLearn.map(skill => ({
@@ -15,7 +13,7 @@ const WantToLearn = () => {
     <Section
       title={
         <>
-          What i want to learn next<Image src={rocket} alt=" " />
+          What i want to learn next &#128640;
         </>
       }
       body={<List listContent={wantToLearnWithIndex} />}

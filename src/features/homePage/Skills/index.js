@@ -1,9 +1,7 @@
 import { nanoid } from "@reduxjs/toolkit";
 import List from "../../../common/List";
 import Section from "../../../common/Section";
-import { Image } from "../Image";
 import { skills } from "./skills";
-import tools from "../../../images/tools.png";
 
 const Skills = () => {
   const skillsWithIndex = skills.map(skill => ({
@@ -15,7 +13,7 @@ const Skills = () => {
     <Section
       title={
         <>
-          My skillset insludes <Image src={tools} alt=" " />
+          My skillset includes 🛠️
         </>
       }
       body={<List listContent={skillsWithIndex} />}
