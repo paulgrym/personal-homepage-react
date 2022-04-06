@@ -1,7 +1,7 @@
 export const wantToLearn = [
   { content: "TypeScript" },
   { content: "Unit testing" },
-  { content: "Node.js" },
+  { content: "Cypress" },
   { content: "JS classes" },
-  { content: "React Context" },
+  { content: "Node.js" },
 ]

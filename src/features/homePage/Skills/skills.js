@@ -1,5 +1,7 @@
 export const skills = [
-  { content: "HTML: semantics, accessibility" },
+  { content: "HTML" },
+  { content: "HTML semantics" },
+  { content: "Accessibility" },
   { content: "CSS Flexbox" },
   { content: "CSS Grid" },
   { content: "BEM convention" },
@@ -18,5 +20,6 @@ export const skills = [
   { content: "NPM" },
   { content: "Git" },
   { content: "Scrum" },
+  { content: "Trello" },
   { content: "Teamwork" },
 ]
