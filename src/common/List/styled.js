@@ -14,7 +14,7 @@ export const StyledList = styled.ul`
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoints.small}px){
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     font-size: 14px;
   }
 `
