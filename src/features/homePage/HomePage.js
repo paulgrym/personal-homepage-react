@@ -6,11 +6,11 @@ import WantToLearn from "./WantToLearn";
 import Footer from "./Footer";
 import Portfolio from "./Portfolio";
 
-const HomePage = ({ toggleTheme, darkModeOn }) => {
+const HomePage = () => {
 
   return (
     <Container>
-      <ThemeSwitcher toggleTheme={toggleTheme} darkModeOn={darkModeOn} />
+      <ThemeSwitcher />
       <PersonInfo />
       <Skills />
       <WantToLearn />
