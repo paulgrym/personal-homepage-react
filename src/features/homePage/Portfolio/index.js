@@ -10,10 +10,30 @@ const Portfolio = () => {
   const dispatch = useDispatch();
   const portfolio = useSelector(selectPortfolioList);
   const portfolioState = useSelector(selectPortfolioState);
+  console.log(portfolioState)
 
   useEffect(() => {
     dispatch(fetchPortfolio());
   }, [dispatch]);
+
+  const renderContent = (state) => {
+    switch (state) {
+      case "initial":
+        return null;
+
+      case "loading":
+        return <PortfolioLoading />;
+
+      case "error":
+        return <PortfolioFail />;
+
+      case "success":
+        return <PortfolioSuccess portfolio={portfolio} />;
+
+      default:
+        throw new Error("incorrect status");
+    }
+  }
 
   return (
     <Section>
@@ -22,12 +42,7 @@ const Portfolio = () => {
         <Subheader>Portfolio</Subheader>
         <Title>My Recent Projects</Title>
       </Header>
-      {portfolioState === "loading"
-        ? <PortfolioLoading />
-        : portfolioState === "error"
-          ? <PortfolioFail />
-          : <PortfolioSuccess portfolio={portfolio} />
-      }
+      {renderContent(portfolioState)}
     </Section>
   );
 };
