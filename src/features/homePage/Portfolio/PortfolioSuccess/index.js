@@ -1,5 +1,6 @@
+import { RepoLink } from "../RepoLink";
 import Tile from "../Tile";
-import { StyledPortfolio } from "./styled"
+import { Paragraph, StyledPortfolio } from "./styled"
 
 const PortfolioSuccess = ({ portfolio }) => {
   const filteredPortfolio = portfolio.filter(({ name }) => (
@@ -11,18 +12,28 @@ const PortfolioSuccess = ({ portfolio }) => {
     return new Date(b.created_at) - new Date(a.created_at);
   });
 
+  const thisProjectRepo = portfolio.find(({ name }) => name === "personal-homepage-react");
+  console.log(thisProjectRepo.name)
+
   return (
-    <StyledPortfolio>
-      {sortedByCreateDayPortfolio.map(repo => (
-        <Tile
-          key={repo.id}
-          title={repo.name}
-          description={repo.description}
-          demoUrl={repo.homepage}
-          repoUrl={repo.html_url}
-        />
-      ))}
-    </StyledPortfolio>
+    <>
+      <Paragraph>
+        <RepoLink href={thisProjectRepo.html_url} target="_blank" rel="noreferrer noopener">
+          This project Github repository
+        </RepoLink>
+      </Paragraph>
+      <StyledPortfolio>
+        {sortedByCreateDayPortfolio.map(repo => (
+          <Tile
+            key={repo.id}
+            title={repo.name}
+            description={repo.description}
+            demoUrl={repo.homepage}
+            repoUrl={repo.html_url}
+          />
+        ))}
+      </StyledPortfolio>
+    </>
   )
 };
 

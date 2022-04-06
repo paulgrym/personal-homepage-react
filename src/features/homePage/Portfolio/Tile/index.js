@@ -1,4 +1,5 @@
-import { Description, Header, Container, Term, Link, StyledTile, LinkItem } from "./styled";
+import { RepoLink } from "../RepoLink";
+import { Description, Header, Container, Term, StyledTile, LinkItem } from "./styled";
 
 const Tile = ({ title, description, demoUrl, repoUrl }) => {
 
@@ -9,13 +10,13 @@ const Tile = ({ title, description, demoUrl, repoUrl }) => {
       <Container>
         <Term>Demo:</Term>
         <LinkItem>
-          <Link href={demoUrl} target="_blank" rel="noreferrer noopener">Project demo</Link>
+          <RepoLink href={demoUrl} target="_blank" rel="noreferrer noopener">Project demo</RepoLink>
         </LinkItem>
       </Container>
       <Container>
         <Term>Code:</Term>
         <LinkItem>
-          <Link href={repoUrl} target="_blank" rel="noreferrer noopener">Github Repository</Link>
+          <RepoLink href={repoUrl} target="_blank" rel="noreferrer noopener">Github Repository</RepoLink>
         </LinkItem>
       </Container>
     </StyledTile>
