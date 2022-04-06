@@ -16,7 +16,7 @@ You can find a demo [here](https://paulgrym.github.io/personal-homepage-react/).
 
 Single page application made in React. It includes lists of my projects, skills and things I would like to learn next. 
 
-The repositories are fetched from the GitHub API. The website has a theme switcher which changes site's color theme from light to dark. 
+The repositories are fetched from the GitHub API. The website has a theme switcher which changes site's color theme from light to dark. The theme color is saved in a local storage.
 
 At the top of the page there is a "Hire me" button, pressing which will scroll to the bottom of the page, where I have listed all the communication channels through which you can contact me.
 
@@ -35,6 +35,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - Redux / Toolkit
 - Redux-Saga
 - Promises, async/await
+- Local Storage
 
 ## Available Scripts
 
