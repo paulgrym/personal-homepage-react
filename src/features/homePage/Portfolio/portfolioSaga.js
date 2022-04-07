@@ -5,7 +5,7 @@ import { fetchPortfolio, fetchPortfolioError, fetchPortfolioSuccess } from "./po
 
 function* fetchPortfolioHandler() {
   try {
-    yield delay(300);
+    yield delay(1000);
     const portfolio = yield call(getPortfolio, APIUrl);
     yield put(fetchPortfolioSuccess(portfolio));
   } catch (error) {
