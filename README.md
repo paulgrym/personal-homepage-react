@@ -5,6 +5,7 @@
 
 * [Demo](#demo)
 * [Description](#description)
+* [Preview](#preview)
 * [Technologies](#technologies)
 * [Available scripts](#available-scripts)
 
@@ -21,6 +22,9 @@ The repositories are fetched from the GitHub API and they are sorted by create d
 At the top of the page there is a "Hire me" button, clicking it will scroll to the bottom of the page, where I have listed all the communication channels through which you can contact me.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Preview
+<img src="./Preview.gif" width="700px">
 
 ## Technologies
 
