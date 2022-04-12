@@ -1,1 +1,1 @@
-export default "https://api.github.com/users/paulgrym/repos";
+export const APIUrl = (username) => `https://api.github.com/users/${username}/repos`;

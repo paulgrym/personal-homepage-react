@@ -1,15 +1,15 @@
 import { call, put, takeLatest, delay } from "redux-saga/effects";
-import APIUrl from "./APIUrl";
+import { APIUrl } from "./APIUrl";
 import { getPortfolio } from "./getPortfolio";
 import { fetchPortfolio, fetchPortfolioError, fetchPortfolioSuccess } from "./portfolioSlice";
 
 function* fetchPortfolioHandler() {
   try {
-    yield delay(1000);
-    const portfolio = yield call(getPortfolio, APIUrl);
+    yield delay(1000); //to demo the loading
+    const portfolio = yield call(getPortfolio, APIUrl("paulgrym"));
     yield put(fetchPortfolioSuccess(portfolio));
   } catch (error) {
-    yield put(fetchPortfolioError(error));
+    yield put(fetchPortfolioError());
   }
 };
 
