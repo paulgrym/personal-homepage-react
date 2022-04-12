@@ -11,7 +11,6 @@ export const GlobalStyle = createGlobalStyle`
 
   body {
     margin: 24px 16px 48px;
-    overflow-y:scroll;
     background: ${({ theme }) => theme.colors.site.background};
     font-family: 'Inter', sans-serif;
     letter-spacing: 0.05em;

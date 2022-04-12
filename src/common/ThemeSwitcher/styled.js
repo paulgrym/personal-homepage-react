@@ -38,7 +38,6 @@ export const Switcher = styled.span`
   border: 1px solid ${({ theme }) => theme.colors.themeSwitcher.border};
   background: ${({ theme }) => theme.colors.themeSwitcher.background};
   display: flex;
-  justify-content: flex-start;
 `
 
 export const SunBackground = styled.span`

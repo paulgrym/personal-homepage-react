@@ -9,12 +9,10 @@ const App = () => {
   const isDarkTheme = useSelector(selectIsDarkTheme);
 
   return (
-    <>
-      <ThemeProvider theme={isDarkTheme ? themeDark : themeLight}>
-        <GlobalStyle />
-        <HomePage />
-      </ThemeProvider>
-    </>
+    <ThemeProvider theme={isDarkTheme ? themeDark : themeLight}>
+      <GlobalStyle />
+      <HomePage />
+    </ThemeProvider>
   );
 };
 
