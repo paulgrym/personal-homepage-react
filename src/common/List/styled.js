@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const StyledList = styled.ul`
   font-size: 18px;
-  list-style:none;
   padding:0;
   margin:0;
   display:grid;
@@ -19,10 +18,11 @@ export const StyledList = styled.ul`
   }
 `
 export const ListItem = styled.li`
-  font-weight: 400;
   color:${({ theme }) => theme.colors.site.text};
-  display: block;
   line-height: 1.4;
+  list-style:none;
+  padding-left: 25px;
+  position: relative;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.small}px){
     line-height: 17px;
@@ -30,12 +30,18 @@ export const ListItem = styled.li`
 
   &:before{
     content: " ";
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    transform: translate(0px, -50%);
     background: ${({ theme }) => theme.colors.primary};
     width: 9px;
     height: 9px;
     border-radius: 50%;
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 16px;
+    
+    @media (max-width: ${({ theme }) => theme.breakpoints.small}px){
+      width: 6px;
+      height: 6px;
+    }
   }
 `
