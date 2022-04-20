@@ -1,1 +1,0 @@
-export const APIUrl = (username) => `https://api.github.com/users/${username}/repos`;

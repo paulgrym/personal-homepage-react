@@ -1,6 +1,6 @@
 import axios from "axios";
 
-export const getPortfolio = async (APIUrl) => {
-  const response = await axios.get(APIUrl);
+export const getPortfolio = async (url) => {
+  const response = await axios.get(url);
   return response.data;
-}
+};
