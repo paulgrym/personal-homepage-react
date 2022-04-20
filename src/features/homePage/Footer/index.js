@@ -20,7 +20,7 @@ const Footer = () => (
       </ContactLink>
     </Contact>
     <Content>
-      If you are looking for a committed team member with outstanding analytical skills and a passion for teamwork, feel free to contact me 😃.
+      If you are looking for a committed team member with great analytical skills and a passion for teamwork, feel free to contact me 😃.
     </Content>
     <Socials>
       {socials.map(({ name, address, Icon }) => (

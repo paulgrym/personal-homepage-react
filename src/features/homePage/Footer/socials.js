@@ -1,7 +1,7 @@
-import { ReactComponent as GithubIcon } from "../../../images/github.svg";
-import { ReactComponent as InstagramIcon } from "../../../images/instagram.svg";
-import { ReactComponent as LinkedInIcon } from "../../../images/linkedIn.svg";
-import { ReactComponent as FacebookIcon } from "../../../images/facebook.svg";
+import { ReactComponent as GithubIcon } from "./images/github.svg";
+import { ReactComponent as InstagramIcon } from "./images/instagram.svg";
+import { ReactComponent as LinkedInIcon } from "./images/linkedIn.svg";
+import { ReactComponent as FacebookIcon } from "./images/facebook.svg";
 import { StyledIcon } from "./styled";
 
 export const socials = [
@@ -25,4 +25,4 @@ export const socials = [
     address: "https://www.facebook.com/paulina.grymulska/",
     Icon: StyledIcon(FacebookIcon),
   },
-]
+];

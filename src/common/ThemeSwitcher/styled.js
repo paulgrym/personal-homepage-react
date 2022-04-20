@@ -1,11 +1,11 @@
 import styled, { css } from "styled-components";
-import { ReactComponent as Sun } from "../../images/sun.svg"
+import { ReactComponent as Sun } from "./sun.svg";
 
 export const Wrapper = styled.div`
   display: flex;
   justify-content: flex-end;
-  position:relative;
-`
+  position: relative;
+`;
 
 export const StyledThemeSwitcher = styled.button`
   color: ${({ theme }) => theme.colors.themeSwitcher.text};
@@ -21,15 +21,15 @@ export const StyledThemeSwitcher = styled.button`
   align-items: center;
   padding: 0;
   outline-offset: 8px;
-`
+`;
 
 export const ThemeSwitcherText = styled.span`
   margin-right: 12px;
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.small}px){
+  @media (max-width: ${({ theme }) => theme.breakpoints.small}px) {
     display: none;
   }
-`
+`;
 
 export const Switcher = styled.span`
   width: 48px;
@@ -38,7 +38,7 @@ export const Switcher = styled.span`
   border: 1px solid ${({ theme }) => theme.colors.themeSwitcher.border};
   background: ${({ theme }) => theme.colors.themeSwitcher.background};
   display: flex;
-`
+`;
 
 export const SunBackground = styled.span`
   background: currentColor;
@@ -47,11 +47,13 @@ export const SunBackground = styled.span`
   display: flex;
   transition: transform 0.3s ease-in;
 
-  ${({ isDarkTheme }) => isDarkTheme && css`
-    transform: translateX(20px);
-  `}
-`
+  ${({ isDarkTheme }) =>
+    isDarkTheme &&
+    css`
+      transform: translateX(20px);
+    `}
+`;
 
 export const SunIcon = styled(Sun)`
-    color: ${({ theme }) => theme.colors.themeSwitcher.icon};
-`
+  color: ${({ theme }) => theme.colors.themeSwitcher.icon};
+`;
