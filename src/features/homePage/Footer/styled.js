@@ -57,6 +57,5 @@ export const Content = styled.p`
   @media (max-width: ${({ theme }) => theme.breakpoints.small}px) {
     margin: 0 0 24px;
     font-size: 14px;
-    line-height: 17px;
   }
 `;

@@ -25,7 +25,7 @@ const common = {
     medium: 991,
     large: 1199,
   },
-}
+};
 
 export const themeLight = {
   ...common,
@@ -40,7 +40,7 @@ export const themeLight = {
     titleUnderline: colorNames.ironLight,
     buttonLink: {
       hoverShadow: colorNames.anakiwa,
-      text: colorNames.white
+      text: colorNames.white,
     },
     themeSwitcher: {
       text: colorNames.slateGrey,
@@ -63,7 +63,7 @@ export const themeLight = {
       spinner: colorNames.ironLight,
       spinnerColor: colorNames.scienceBlue,
     },
-  }
+  },
 };
 
 export const themeDark = {
@@ -79,7 +79,7 @@ export const themeDark = {
     titleUnderline: colorNames.ironLight,
     buttonLink: {
       hoverShadow: colorNames.shipCove,
-      text: colorNames.white
+      text: colorNames.white,
     },
     themeSwitcher: {
       text: colorNames.white,
@@ -102,6 +102,5 @@ export const themeDark = {
       spinner: colorNames.mineShaftLight,
       spinnerColor: colorNames.dodgerBlue,
     },
-  }
-
+  },
 };

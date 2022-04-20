@@ -8,8 +8,13 @@ export const Header = styled.header`
   grid-template-columns: auto 1fr;
   gap: 72px;
 
+  @media (max-width: ${({ theme }) => theme.breakpoints.medium}px) {
+    gap: 36px;
+  }
+
   @media (max-width: ${({ theme }) => theme.breakpoints.small}px) {
-    display: block;
+    gap: 12px;
+    grid-template-columns: 1fr;
     margin: -15px 0 48px;
   }
 `;
@@ -48,7 +53,6 @@ export const Title = styled.h1`
   @media (max-width: ${({ theme }) => theme.breakpoints.small}px) {
     margin: 0 0 16px;
     font-size: 22px;
-    line-height: 27px;
   }
 `;
 
