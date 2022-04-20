@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { ReactComponent as EnvelopeIcon } from "./images/envelope.svg";
 
-export const AboutSection = styled.section`
+export const Header = styled.header`
   margin: -28px 0 72px;
   max-width: 1089px;
   display: grid;
@@ -38,7 +38,7 @@ export const Introduction = styled.div`
   }
 `;
 
-export const Header = styled.h1`
+export const Title = styled.h1`
   font-weight: 900;
   font-size: 38px;
   line-height: 46px;

@@ -11,9 +11,11 @@ const Homepage = () => {
     <Container>
       <ThemeSwitcher />
       <PersonInfo />
-      <Skills />
-      <WantToLearn />
-      <Portfolio />
+      <main>
+        <Skills />
+        <WantToLearn />
+        <Portfolio />
+      </main>
       <Footer />
     </Container>
   );

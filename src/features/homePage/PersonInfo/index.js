@@ -3,6 +3,7 @@ import {
   Photo,
   Introduction,
   Header,
+  Title,
   Content,
   ButtonIcon,
 } from "./styled";
@@ -11,14 +12,14 @@ import { ButtonLink } from "../../../common/ButtonLink";
 import { Link } from "react-scroll";
 
 const PersonInfo = () => (
-  <AboutSection>
+  <Header>
     <Photo src={photo} alt="Paulina Grymulska" />
     <div>
       <Introduction>This is</Introduction>
-      <Header>Paulina Grymulska</Header>
+      <Title>Paulina Grymulska</Title>
       <Content>
-        I'm an aspiring Frontend Developer and a feedback lover, who is
-        dedicated to learning React. Currently, I'm looking for a new job
+        I'm an aspiring Frontend Developer and a&nbsp;feedback lover, who is
+        dedicated to learning React. Currently, I'm looking for a&nbsp;new job
         opportunities, so if you like my projects please don't hesitate to
         contact me 😃💻.
       </Content>
@@ -29,7 +30,7 @@ const PersonInfo = () => (
         </ButtonLink>
       </Link>
     </div>
-  </AboutSection>
+  </Header>
 );
 
 export default PersonInfo;
