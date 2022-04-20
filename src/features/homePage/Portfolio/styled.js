@@ -24,7 +24,7 @@ export const Icon = styled(PortfolioIcon)`
   }
 `;
 
-export const Subheader = styled.h3`
+export const Subheader = styled.h2`
   margin: 0 0 8px;
   font-weight: 900;
   font-size: 30px;
@@ -38,7 +38,7 @@ export const Subheader = styled.h3`
   }
 `;
 
-export const Title = styled.h4`
+export const Title = styled.h3`
   margin: 0;
   font-weight: 400;
   font-size: 20px;
