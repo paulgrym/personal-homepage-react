@@ -1,5 +1,5 @@
 import { call, put, takeLatest, delay } from "redux-saga/effects";
-import { githubAPIUrl } from "./githubAPIUrl";
+import { githubAPIUrl, username } from "./githubData";
 import { getPortfolio } from "./getPortfolio";
 import {
   fetchPortfolio,
@@ -12,7 +12,7 @@ const loadingDelay = 1000;
 function* fetchPortfolioHandler() {
   try {
     yield delay(loadingDelay); //to demo the loading
-    const portfolio = yield call(getPortfolio, githubAPIUrl("paulgrym"));
+    const portfolio = yield call(getPortfolio, githubAPIUrl(username));
     yield put(fetchPortfolioSuccess(portfolio));
   } catch (error) {
     yield put(fetchPortfolioError());
