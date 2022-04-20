@@ -1,7 +1,7 @@
 import { ThemeProvider } from "styled-components";
-import HomePage from "./features/homePage/HomePage";
+import Homepage from "./features/homepage/Homepage";
 import { themeDark, themeLight } from "./theme";
-import { GlobalStyle } from './globalStyles';
+import { GlobalStyle } from "./globalStyles";
 import { selectIsDarkTheme } from "./common/ThemeSwitcher/themeSlice";
 import { useSelector } from "react-redux";
 
@@ -11,7 +11,7 @@ const App = () => {
   return (
     <ThemeProvider theme={isDarkTheme ? themeDark : themeLight}>
       <GlobalStyle />
-      <HomePage />
+      <Homepage />
     </ThemeProvider>
   );
 };

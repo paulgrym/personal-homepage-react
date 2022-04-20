@@ -6,8 +6,7 @@ import WantToLearn from "./WantToLearn";
 import Footer from "./Footer";
 import Portfolio from "./Portfolio";
 
-const HomePage = () => {
-
+const Homepage = () => {
   return (
     <Container>
       <ThemeSwitcher />
@@ -17,7 +16,7 @@ const HomePage = () => {
       <Portfolio />
       <Footer />
     </Container>
-  )
+  );
 };
 
-export default HomePage;
+export default Homepage;
