@@ -3,13 +3,10 @@ import {
   Contact,
   ContactLink,
   Content,
-  Item,
-  Link,
-  Socials,
-  StyledFooter
+  StyledFooter,
 } from "./styled";
 import { email } from "../email";
-import { socials } from "./socials";
+import SocialIcons from "./SocialIcons";
 
 const Footer = () => (
   <StyledFooter id="footer">
@@ -20,17 +17,10 @@ const Footer = () => (
       </ContactLink>
     </Contact>
     <Content>
-      If you are looking for a committed team member with great analytical skills and a passion for teamwork, feel free to contact me 😃.
+      If you are looking for a&nbsp;committed team member with great analytical
+      skills and a&nbsp;passion for teamwork, feel free to contact me 😃.
     </Content>
-    <Socials>
-      {socials.map(({ name, address, Icon }) => (
-        <Item key={name}>
-          <Link href={address} title={name} target="_blank" rel="noreferrer noopener">
-            <Icon />
-          </Link>
-        </Item>
-      ))}
-    </Socials>
+    <SocialIcons />
   </StyledFooter>
 );
 
