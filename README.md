@@ -1,5 +1,4 @@
 # Virtual CV
-[Work in progress]
 
 ## Table od content
 
