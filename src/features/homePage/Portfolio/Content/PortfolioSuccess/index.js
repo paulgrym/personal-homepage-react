@@ -4,7 +4,10 @@ import { Paragraph, StyledPortfolio } from "./styled";
 
 const PortfolioSuccess = ({ portfolio }) => {
   const filteredPortfolio = portfolio.filter(
-    ({ name }) => name !== "paulgrym" && name !== "personal-homepage-react"
+    ({ name }) =>
+      name !== "paulgrym" &&
+      name !== "personal-homepage-react" &&
+      name !== "test"
   );
 
   const sortedByCreateDayPortfolio = filteredPortfolio.sort((a, b) => {
