@@ -45,7 +45,6 @@ export const Description = styled.p`
 `;
 export const Container = styled.dl`
   display: flex;
-  grid-template-columns: auto 1fr;
   margin: 0 0 8px;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.small}px) {

@@ -1,5 +1,4 @@
 import {
-  AboutSection,
   Photo,
   Introduction,
   Header,
